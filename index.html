@@ -5,59 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Hometask-08.12</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control name" placeholder="Name" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-                <span id="span1"></span>
-            </div>
-            <div class="col-12">
-                <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control surname" placeholder="Surname" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-                <span id="span2"></span>
-            </div>
-            <div class="col-12">
-                <div class="input-group flex-nowrap ">
-                    <input type="text" class="form-control email" placeholder="e-mail" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-                <span id="span3"></span>
-
-            </div>
-            <div class="col-12">
-                <div class="password-inner"><div class="input-group flex-nowrap">
-                    <input type="password" class="form-control password" placeholder="password" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-                <i class="fa-regular fa-eye"></i></div>
-                
-                <span id="span4"></span>
-            </div>
-            <div class="col-12">
-                <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control age" placeholder="age" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-                <span id="span5"></span>
-            </div>
-            <div class="col-12">
-                <button id="sumbit">Sumbit</button>
-            </div>
+    <div id="inputs">
+        <textarea id="message-content" placeholder="Message content..."></textarea>
+        <div class="input">
+            <label for="duration">Duration</label>
+            <input id="duration" type="number" min="500" value="3000" />
         </div>
+        <div class="input">
+            <label for="cancelable">Is Cancelable</label>
+            <input id="cancelable" type="checkbox" />
+        </div>
+        <div class="input">
+            <label for="success">Success</label>
+            <input id="success" type="radio" name="type" value="success" checked />
+            <label for="error">Error</label>
+            <input id="error" type="radio" name="type" value="error" />
+        </div>
+        <button id="add-button">Add Toast</button>
+        <button id="clear-button">Clear Toasts</button>
     </div>
+    <!-- Toasters -->
+    <div id="toasts">
+    </div>
+
     <script src="./app.js"></script>
 </body>
 
